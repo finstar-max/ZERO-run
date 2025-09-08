@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(132,123,140,255);
+}
+
+.game-board{
+    width: 100%;
+    height: 610px;
+    border-bottom: 10px solid rgba(236,193,156,255);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url('./imagens/background.png');
+}
+
+
+.ZERO{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+.bird {
+    position: absolute;
+    width: 70px;
+    animation: bird-anima 10s infinite linear;
+}
+
+.grunt{
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    width: 90px;
+    animation: grunt-anima 2s infinite linear;
+}
+
+.gameover{
+    display: none;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 450px;
+    text-align: center;
+}
+
+.fim{
+    width: 800px;
+    display: block;
+    margin-left: 120px;
+}
+
+#restart {
+    position: absolute;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color: rgba(109,174,206,239);
+    text-shadow: 1px 1px 2px rgba(60,43,92,47);
+    cursor: pointer;
+
+}
+
+#restart:hover {
+    color: darkred;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+
+
+@keyframes grunt-anima{
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes bird-anima {
+    from{
+        right: -60px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
