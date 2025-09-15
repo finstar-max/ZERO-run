@@ -7,13 +7,13 @@ This is a study project with the aim of better understanding the use of HTML, CS
 ## Instalação // Instalation
 Para total funcionamento do site, os arquivos apos baixados deverão ser organizados da seguinte maneira:
 -crie uma pasta para guardar todos os arquivos com o nome de sua preferencia
-    
+
 -dentro de tal pasta, deixe os arquivos "index.html" e "script.js" soltos 
-    
+
 -confira se existe uma pasta "assets", caso não tenha crie, dentro dela deixe o arquivo "style.css" solto
-    
+
 -ainda dentro da pasta "assests" existirá uma pasta "imagens" onde deverão estar todas as fotos utilizadas no projeto e uma pasta "fonte_TT2_BRK" que possui os arquivos "COPYRIGHT.txt" e "visitortt2brk.ttf"
-    
+
 -após isso o projeto deverá estar funcionando sem problemas
 
 For the site to work properly, the downloaded files should be organized as follows:
