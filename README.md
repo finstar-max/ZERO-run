@@ -1,6 +1,5 @@
 # ZERO run
-esse é um projeto de estudo com objetivo de entender melhor o uso de HTML, CSS e JS. Recriando um jogo estilo "Dino Run" com sprites do jogo [**katana ZERO**](https://katanazero.com)
-
+Esse é um projeto de estudo com objetivo de entender melhor o uso de HTML, CSS e JS. Recriando um jogo estilo "Dino Run" com sprites do jogo [**katana ZERO**](https://katanazero.com)
 
 This is a study project with the aim of better understanding the use of HTML, CSS, and JS. Recreating a "Dino Run" style game with sprites from the game [**katana ZERO**](https://katanazero.com)
 
