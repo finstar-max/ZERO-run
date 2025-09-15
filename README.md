@@ -1,7 +1,7 @@
 # ZERO run
-  esse é um projeto de estudo com objetivo de entender melhor o uso de HTML, CSS e JS. Recriando um jogo estilo "Dino Run" com sprites do jogo [katana ZERO](#https://store.steampowered.com/app/460950/Katana_ZERO/)
-  //
-  This is a study project with the aim of better understanding the use of HTML, CSS, and JS. Recreating a "Dino Run" style game with sprites from the game [Katana ZERO](#https://store.steampowered.com/app/460950/Katana_ZERO/)
+    esse é um projeto de estudo com objetivo de entender melhor o uso de HTML, CSS e JS. Recriando um jogo estilo "Dino Run" com sprites do jogo [katana ZERO](#https://store.steampowered.com/app/460950/Katana_ZERO/)
+    //
+    This is a study project with the aim of better understanding the use of HTML, CSS, and JS. Recreating a "Dino Run" style game with sprites from the game [Katana ZERO](#https://store.steampowered.com/app/460950/Katana_ZERO/)
 
   ## Instalação // Instalation
     Para total funcionamento do site, os arquivos apos baixados deverão ser organizados da seguinte maneira:
