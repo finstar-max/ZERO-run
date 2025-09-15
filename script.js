@@ -3,8 +3,10 @@ const ZERO = document.querySelector('.ZERO')
 const grunt = document.querySelector('.grunt')
 const telagameover = document.getElementById('gameover')
 const restart = document.getElementById('restart')
+const back = document.querySelector('.back');
+const ponto = document.getElementById('score');
 
-
+let score = 0
 let gameover = false
 
 const jump= () =>{
@@ -39,8 +41,9 @@ const loop = setInterval(() => {
 
         ZERO.style.animation = 'none';
         ZERO.style.zIndex = 10
-
         ZERO.src = './assets/imagens/caiu.webp';
+
+        back.style.animationPlayState = 'paused';
 
         gameover = true
         telagameover.style.display = 'block';
@@ -49,6 +52,9 @@ const loop = setInterval(() => {
         
         telagameover.style.display = 'block';
     }
+
+    score++;
+    ponto.textContent = score.toString().padStart(5, '0');
 
 }, 10);
 

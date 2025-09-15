@@ -1,32 +1,47 @@
-*{
+@font-face {
+    font-family: 'katana-font';
+    src: url('./fonte_TT2_BRK/visitortt2brk.ttf') format('truetype');
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgba(132,123,140,255);
+body {
+    background-color: rgba(132, 123, 140, 255);
 }
 
-.game-board{
+.game-board {
     width: 100%;
     height: 610px;
-    border-bottom: 10px solid rgba(236,193,156,255);
+    border-bottom: 10px solid rgba(236, 193, 156, 255);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background-image: url('./imagens/background.png');
 }
 
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./imagens/background.png);
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    animation: back-anima 10s linear infinite;
+    z-index: -1;
+}
 
-.ZERO{
+.ZERO {
     width: 150px;
     position: absolute;
     bottom: 0;
-    
 }
 
-.jump{
+.jump {
     animation: jump 500ms ease-out;
 }
 
@@ -36,7 +51,7 @@ body{
     animation: bird-anima 10s infinite linear;
 }
 
-.grunt{
+.grunt {
     position: absolute;
     bottom: 0;
     height: 120px;
@@ -44,7 +59,22 @@ body{
     animation: grunt-anima 2s infinite linear;
 }
 
-.gameover{
+h1{
+    padding-left: 10px;
+    font-family: katana-font;
+    font-size: 40px;
+    color: rgba(109, 174, 206, 239);
+}
+
+#score {
+    position: absolute;
+    padding-left: 20px ;
+    font-size: 20px;
+    color: rgba(109, 174, 206, 239);
+    border-radius: 5px;
+}
+
+.gameover {
     display: none;
     position: absolute;
     margin-top: 30px;
@@ -52,7 +82,9 @@ body{
     text-align: center;
 }
 
-.fim{
+.fim {
+    font-family: katana-font;
+    font-size: 40px;
     width: 800px;
     display: block;
     margin-left: 120px;
@@ -63,55 +95,61 @@ body{
     font-size: 18px;
     background-color: transparent;
     border: none;
-    color: rgba(109,174,206,239);
-    text-shadow: 1px 1px 2px rgba(60,43,92,47);
+    color: rgba(109, 174, 206, 239);
+    text-shadow: 1px 1px 2px rgba(60, 43, 92, 47);
     cursor: pointer;
-
 }
 
 #restart:hover {
     color: darkred;
 }
 
-@keyframes jump{
-    0%{
+@keyframes jump {
+    0% {
         bottom: 0;
     }
 
-    40%{
+    40% {
         bottom: 180px;
     }
 
-    50%{
+    50% {
         bottom: 180px;
     }
 
-    60%{
+    60% {
         bottom: 180px;
     }
 
-    100%{
+    100% {
         bottom: 0;
     }
 }
 
-
-@keyframes grunt-anima{
-    from{
+@keyframes grunt-anima {
+    from {
         right: -80px;
     }
 
-    to{
+    to {
         right: 100%;
+    }
+}
+
+@keyframes back-anima {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: -215%;
     }
 }
 
 @keyframes bird-anima {
-    from{
+    from {
         right: -60px;
     }
-    to{
+    to {
         right: 100%;
     }
 }
-
